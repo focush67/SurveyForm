@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 15px 30px;
+        font-size: 17px;
+        padding: 8px;
+    }
+
+    .container{
+        background-color: lightgray;
+        padding: 5px 20px 15px 20px;
+        border: solid darkgray;
+        border-radius: 4px;
+        margin: 2px;
+    }
+
+    input[type="text"]{
+        width: 100%;
+        border-radius: 3px;
+        padding: 2px;
+        margin: 4px;
+        border-radius: 3px;
+        border: 0cm solid lightgray;
+
+    }
+
+    input[type="email"]{
+        width: 100%;
+        padding: 2px;
+        margin: 5px;
+        border-radius: 3px;
+        border: 0cm solid lightgray;
+
+    }
+
+    input[type="number"]{
+        width: 100%;
+        padding: 2px;
+        margin: 5px;
+        border-radius: 3px ;
+        border: 0cm solid lightgray;
+
+    }
+
+    input[type="date"]{
+        width: 100%;
+        border-radius: 3px;
+        border: 0cm solid lightgray;
+
+    }
+
+    fieldset{
+        background-color: white;
+    }
+
+    select{
+        width: 100%;
+        border: 1px;
+        padding: 2px;
+        margin: 5px;
+        border-radius: 3px;
+        border: 0cm solid lightgray;
+    }
+
+    .main{
+        text-align: center;
+
+    }
+
+    input[type="submit"]{
+        width: 100%;
+        background-color: gray;
+        padding: 12px 20px;
+        color: black;
+        border-radius: 3px;
+        border: 1px solid darkgray;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover{
+        background-color: darkgreen;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h1 class="main"><i>SURVEY FORM</i></h1>
+        <hr> 
+    
+<br>
+
+
+
+    
+        <p><b><i>--Required Fields are followed by *--</i></b></p>
+        <br>
+        <p>Name : *<input type="text" required placeholder="Johhn Wick"></p>
+        <br>
+        
+        <fieldset>
+        <div class="gender" id="gender" >*
+            <legend>
+            Male <input type="radio" name="gender" id="male">
+            Female <input type="radio" name="gender" id="female">
+            Other <input type="radio" name="gender">
+        </legend>
+        </div>
+       </fieldset>
+        <br>
+        
+        <p>Date Of Birth :* <input type="date" name="dob" id="" required></p>
+        <br>
+        <p>Nationality :* 
+            <select name="nation" id="nation_name">
+                <option value="">--Select Country--</option>
+                <option value="United States">United States</option>
+                <option value="Russia">Russia</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+                <option value="India">India</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Italy">Italy</option>
+                <option value="Israel">Israel</option>
+                <option value="Iran">Iran</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Phillipines">Phillipines</option>
+                <option value="Australia">Australia</option>
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="South_Africa">South Africa</option>
+                <option value="England">England</option>
+                <option value="Alaska">Alaska</option>
+            </select>
+        </p>
+        <br>
+        <p>E-Mail :* <input type="email" name="email" placeholder="xyz@gmail.com"></p>
+        <br>
+        <p>Age : <input type="number" ></p>
+        <br>
+        <p>PinCode : <input type="number" name="number" ></p>
+        <br>
+        <input type="submit" value="Submit">
+    </div>
+</body>
+</html>
